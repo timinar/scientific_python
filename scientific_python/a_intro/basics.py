@@ -52,7 +52,7 @@ print(1024 ** 128)
 
 ## Floats ##
 
-# There is built-in floating point numbers (float for short):
+# There are built-in floating point numbers (float for short):
 print(1.23)
 # 1.23
 print(1e-3)
@@ -66,7 +66,7 @@ print(1e200 * 1e200)
 # Division (operator "/") works different in Python 2 and 3. In Python 2
 # division of two integers is always integer but in Python 3 it is always
 # float. "Magic" statement "from __future__ import division" above works in the
-# very same way as for print function described earlier and asks Python 2 to
+# very same way as for the print function described earlier and asks Python 2 to
 # work as Python 3. Use it always if your code can be run with Python 2
 # interpreter.
 
@@ -78,9 +78,9 @@ print(4 / 2)
 print(1.5 / 0.5)
 # 3.0
 
-# Operator "//" returns integer rounded to smaller value. It returns integer
-# typed value for a pair of integers and float typed value if at least one of
-# the value is float:
+# Operator "//" returns an integer rounded to the smaller value. It returns an integer
+# typed value for a pair of integers and a float typed value if at least one of
+# the values is float:
 print(1 // 2)
 # 0
 print(4.0 // 2)
@@ -88,7 +88,7 @@ print(4.0 // 2)
 print(1.5 // 0.4)
 # 3.0
 
-# Operator "%" returns fractional part, return value is determined from the same
+# Operator "%" returns the fractional part, the returned value is determined by the same
 # laws as for "//".
 print(1 % 2)
 # 1
@@ -106,15 +106,15 @@ print(1.5 % 0.4)
 print(2 + 3j)
 # (2+3j)
 
-# Where j is the imaginary unit modifier
+# Where j is an imaginary unit modifier
 
 
 ### Variables and numerical types ###
 
 ## Dynamic type checking ##
 
-# Python is dynamic type checking language that means you don't need to declare
-# variable before assignment. Also you can change type of variable after the
+# Python is a dynamic type checking language that means you don't need to declare
+# variable before assignment. Also you can change the type of the variable after the
 # first assignment
 a = 10
 print(a)
@@ -125,7 +125,7 @@ print(a)
 
 ## Type conversions ##
 
-# You can convert variable from one type to another
+# You can convert a variable from one type to another
 a = 7
 b = complex(7)
 print(b)
@@ -139,8 +139,8 @@ print(b)
 
 # Python is an object oriented language and each variable is represented by an
 # object of some type (class). We will describe how to create our own classes
-# later. Now the only thing that we should now that classes and therefore
-# objects have attributes and methods (functions). Syntax of attribute access is
+# later. Now the only thing that we should now is that classes and therefore
+# objects have attributes and methods (functions). Syntax of an attribute access is
 # the same as in a lot of other languages via "." separator.
 a = (-1 + 0j)**(-0.5)  # "+ 0j" is needed only in Python 2
 print(a.imag)
@@ -169,7 +169,7 @@ else:
     print(0)
 # 4
 
-# Pay attention to colon and that blocks inside if-else statement are shifted. 
+# Pay attention to the colon and that blocks inside if-else statement are shifted. 
 
 if a < 0:
     print(-a)
@@ -192,7 +192,7 @@ else:
 ## Indentation ##
 
 # Indention is a part of Python language. You should always use one type of
-# indention: # spaces or tabs. Otherwise interpreter will fail with
+# indention: # spaces or tabs. Otherwise interpreter will fail with an
 # IndentationError error. PEP 8 (style guide for Python code,
 # http://pep8.org/#indentation) recommends to use 4 spaces per each indention
 # level. I will try to follow PEP 8 in this course.
@@ -225,7 +225,7 @@ b = not b
 print(b)
 # True
 
-# Each variable has Boolean value that used by if to decide what to do. You can
+# Each variable has a Boolean value that used by the if to decide what to do. You can
 # obtain this Boolean value by built-in bool function:
 print(bool(0+1j))
 # True
@@ -246,7 +246,7 @@ print(s)
 
 ## Continue and break statements ##
 
-# You can skip step of a loop using continue statement:
+# You can skip a step of a loop using continue statement:
 a = 0
 s = 0
 while a < 10:
@@ -267,7 +267,7 @@ while True:
         break
 print(s)
 # 1035
-# This is an artificial example but pay attention how to make infinite loop.
+# This is an artificial example but pay attention how to make an infinite loop.
 
 ## while and else together ##
 
